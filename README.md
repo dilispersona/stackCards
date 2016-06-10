@@ -2,4 +2,3 @@
 ## Install Steps
 - npm Install
 - grunt
-# stackCards

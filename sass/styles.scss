@@ -1,0 +1,429 @@
+body {
+    font-family: sans-serif;
+    font-size: 16px;
+    background-color: #cfcfcf;
+}
+
+.prev {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+}
+.next {
+    position: absolute;
+    bottom: 10px;
+    left: 71px;
+}
+
+#center {
+    width: 610px;
+    margin: 10px auto;
+}
+
+ul {
+    position: relative;
+    margin: 100px;
+}
+
+.stack {
+    transition: all 0.4s;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+li {
+    list-style-type: none;
+    width: 600px;
+    height: 500px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    padding: 5px;
+    > span {
+      font-size: 45px;
+      position: absolute;
+      top: 40%;
+      left: 43%;
+      opacity: 0.7;
+    }
+}
+
+/*unanimated state*/
+.stack-spread {
+  li {
+    &:nth-child(1) {
+      z-index: 10;
+    }
+    &:nth-child(2) {
+      z-index: 9;
+    }
+    &:nth-child(3) {
+      z-index: 8;
+    }
+    &:nth-child(4) {
+      z-index: 7;
+    }
+    &:nth-child(5) {
+      z-index: 6;
+    }
+    &:nth-child(6) {
+      z-index: 5;
+    }
+    &:nth-child(7) {
+      z-index: 4;
+    }
+    &:nth-child(8) {
+      z-index: 3;
+    }
+    &:nth-child(9) {
+      z-index: 2;
+    }
+    &:nth-child(10) {
+      z-index: 1;
+    }
+  }
+  .highest {
+    z-index: 11 !important;
+  }
+}
+
+/* one */
+.one.active li {
+  &:nth-child(1) {
+    transform: translate(0, 0);
+  }
+  &:nth-child(2) {
+    transform: translate(-5px, -5px);
+  }
+  &:nth-child(3) {
+    transform: translate(-10px, -10px);
+  }
+  &:nth-child(4) {
+    transform: translate(-15px, -15px);
+  }
+  &:nth-child(5) {
+    transform: translate(-20px, -20px);
+  }
+  &:nth-child(6) {
+    transform: translate(-25px, -25px);
+  }
+  &:nth-child(7) {
+    transform: translate(-30px, -30px);
+  }
+  &:nth-child(8) {
+    transform: translate(-35px, -35px);
+  }
+  &:nth-child(9) {
+    transform: translate(-40px, -40px);
+  }
+  &:nth-child(10) {
+    transform: translate(-45px, -45px);
+  }
+}
+
+/*two */
+.two.active li {
+  &:nth-child(2) {
+    transform: translate(0, 0);
+  }
+  &:nth-child(1) {
+    transform: translate(-5px, -5px);
+  }
+  &:nth-child(3) {
+    transform: translate(-10px, -10px);
+  }
+  &:nth-child(4) {
+    transform: translate(-15px, -15px);
+  }
+  &:nth-child(5) {
+    transform: translate(-20px, -20px);
+  }
+  &:nth-child(6) {
+    transform: translate(-25px, -25px);
+  }
+  &:nth-child(7) {
+    transform: translate(-30px, -30px);
+  }
+  &:nth-child(8) {
+    transform: translate(-35px, -35px);
+  }
+  &:nth-child(9) {
+    transform: translate(-40px, -40px);
+  }
+  &:nth-child(10) {
+    transform: translate(-45px, -45px);
+  }
+}
+
+/*three */
+.three.active li {
+  &:nth-child(3) {
+    transform: translate(0, 0);
+  }
+  &:nth-child(1) {
+    transform: translate(-5px, -5px);
+  }
+  &:nth-child(2) {
+    transform: translate(-10px, -10px);
+  }
+  &:nth-child(4) {
+    transform: translate(-15px, -15px);
+  }
+  &:nth-child(5) {
+    transform: translate(-20px, -20px);
+  }
+  &:nth-child(6) {
+    transform: translate(-25px, -25px);
+  }
+  &:nth-child(7) {
+    transform: translate(-30px, -30px);
+  }
+  &:nth-child(8) {
+    transform: translate(-35px, -35px);
+  }
+  &:nth-child(9) {
+    transform: translate(-40px, -40px);
+  }
+  &:nth-child(10) {
+    transform: translate(-45px, -45px);
+  }
+}
+
+/*four */
+.four.active li {
+  &:nth-child(4) {
+    transform: translate(0, 0);
+  }
+  &:nth-child(1) {
+    transform: translate(-5px, -5px);
+  }
+  &:nth-child(2) {
+    transform: translate(-10px, -10px);
+  }
+  &:nth-child(3) {
+    transform: translate(-15px, -15px);
+  }
+  &:nth-child(5) {
+    transform: translate(-20px, -20px);
+  }
+  &:nth-child(6) {
+    transform: translate(-25px, -25px);
+  }
+  &:nth-child(7) {
+    transform: translate(-30px, -30px);
+  }
+  &:nth-child(8) {
+    transform: translate(-35px, -35px);
+  }
+  &:nth-child(9) {
+    transform: translate(-40px, -40px);
+  }
+  &:nth-child(10) {
+    transform: translate(-45px, -45px);
+  }
+}
+
+/*five */
+.five.active li {
+  &:nth-child(5) {
+    transform: translate(0, 0);
+  }
+  &:nth-child(1) {
+    transform: translate(-5px, -5px);
+  }
+  &:nth-child(2) {
+    transform: translate(-10px, -10px);
+  }
+  &:nth-child(3) {
+    transform: translate(-15px, -15px);
+  }
+  &:nth-child(4) {
+    transform: translate(-20px, -20px);
+  }
+  &:nth-child(6) {
+    transform: translate(-25px, -25px);
+  }
+  &:nth-child(7) {
+    transform: translate(-30px, -30px);
+  }
+  &:nth-child(8) {
+    transform: translate(-35px, -35px);
+  }
+  &:nth-child(9) {
+    transform: translate(-40px, -40px);
+  }
+  &:nth-child(10) {
+    transform: translate(-45px, -45px);
+  }
+}
+
+/*six */
+.six.active li {
+  &:nth-child(6) {
+    transform: translate(0, 0);
+  }
+  &:nth-child(1) {
+    transform: translate(-5px, -5px);
+  }
+  &:nth-child(2) {
+    transform: translate(-10px, -10px);
+  }
+  &:nth-child(3) {
+    transform: translate(-15px, -15px);
+  }
+  &:nth-child(4) {
+    transform: translate(-20px, -20px);
+  }
+  &:nth-child(5) {
+    transform: translate(-25px, -25px);
+  }
+  &:nth-child(7) {
+    transform: translate(-30px, -30px);
+  }
+  &:nth-child(8) {
+    transform: translate(-35px, -35px);
+  }
+  &:nth-child(9) {
+    transform: translate(-40px, -40px);
+  }
+  &:nth-child(10) {
+    transform: translate(-45px, -45px);
+  }
+}
+
+/*seven */
+.seven.active li {
+  &:nth-child(7) {
+    transform: translate(0, 0);
+  }
+  &:nth-child(1) {
+    transform: translate(-5px, -5px);
+  }
+  &:nth-child(2) {
+    transform: translate(-10px, -10px);
+  }
+  &:nth-child(3) {
+    transform: translate(-15px, -15px);
+  }
+  &:nth-child(4) {
+    transform: translate(-20px, -20px);
+  }
+  &:nth-child(5) {
+    transform: translate(-25px, -25px);
+  }
+  &:nth-child(6) {
+    transform: translate(-30px, -30px);
+  }
+  &:nth-child(8) {
+    transform: translate(-35px, -35px);
+  }
+  &:nth-child(9) {
+    transform: translate(-40px, -40px);
+  }
+  &:nth-child(10) {
+    transform: translate(-45px, -45px);
+  }
+}
+
+/*eight */
+.eight.active li {
+  &:nth-child(8) {
+    transform: translate(0, 0);
+  }
+  &:nth-child(1) {
+    transform: translate(-5px, -5px);
+  }
+  &:nth-child(2) {
+    transform: translate(-10px, -10px);
+  }
+  &:nth-child(3) {
+    transform: translate(-15px, -15px);
+  }
+  &:nth-child(4) {
+    transform: translate(-20px, -20px);
+  }
+  &:nth-child(5) {
+    transform: translate(-25px, -25px);
+  }
+  &:nth-child(6) {
+    transform: translate(-30px, -30px);
+  }
+  &:nth-child(7) {
+    transform: translate(-35px, -35px);
+  }
+  &:nth-child(9) {
+    transform: translate(-40px, -40px);
+  }
+  &:nth-child(10) {
+    transform: translate(-45px, -45px);
+  }
+}
+
+/*nine */
+.nine.active li {
+  &:nth-child(9) {
+    transform: translate(0, 0);
+  }
+  &:nth-child(1) {
+    transform: translate(-5px, -5px);
+  }
+  &:nth-child(2) {
+    transform: translate(-10px, -10px);
+  }
+  &:nth-child(3) {
+    transform: translate(-15px, -15px);
+  }
+  &:nth-child(4) {
+    transform: translate(-20px, -20px);
+  }
+  &:nth-child(5) {
+    transform: translate(-25px, -25px);
+  }
+  &:nth-child(6) {
+    transform: translate(-30px, -30px);
+  }
+  &:nth-child(7) {
+    transform: translate(-35px, -35px);
+  }
+  &:nth-child(8) {
+    transform: translate(-40px, -40px);
+  }
+  &:nth-child(10) {
+    transform: translate(-45px, -45px);
+  }
+}
+
+
+/*10 */
+.ten.active li {
+  &:nth-child(10) {
+    transform: translate(0, 0);
+  }
+  &:nth-child(1) {
+    transform: translate(-5px, -5px);
+  }
+  &:nth-child(2) {
+    transform: translate(-10px, -10px);
+  }
+  &:nth-child(3) {
+    transform: translate(-15px, -15px);
+  }
+  &:nth-child(4) {
+    transform: translate(-20px, -20px);
+  }
+  &:nth-child(5) {
+    transform: translate(-25px, -25px);
+  }
+  &:nth-child(6) {
+    transform: translate(-30px, -30px);
+  }
+  &:nth-child(7) {
+    transform: translate(-35px, -35px);
+  }
+  &:nth-child(8) {
+    transform: translate(-40px, -40px);
+  }
+  &:nth-child(9) {
+    transform: translate(-45px, -45px);
+  }
+}
